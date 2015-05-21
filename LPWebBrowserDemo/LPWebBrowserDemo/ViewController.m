@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  LPWebBorwserDemo
+//  LPWebBrowserDemo
 //
 //  Created by lipeng on 15/5/21.
 //  Copyright (c) 2015年 lipeng. All rights reserved.

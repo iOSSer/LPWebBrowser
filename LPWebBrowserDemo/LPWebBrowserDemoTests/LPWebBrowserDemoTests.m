@@ -1,6 +1,6 @@
 //
-//  LPWebBorwserDemoTests.m
-//  LPWebBorwserDemoTests
+//  LPWebBrowserDemoTests.m
+//  LPWebBrowserDemoTests
 //
 //  Created by lipeng on 15/5/21.
 //  Copyright (c) 2015年 lipeng. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface LPWebBorwserDemoTests : XCTestCase
+@interface LPWebBrowserDemoTests : XCTestCase
 
 @end
 
-@implementation LPWebBorwserDemoTests
+@implementation LPWebBrowserDemoTests
 
 - (void)setUp {
     [super setUp];
