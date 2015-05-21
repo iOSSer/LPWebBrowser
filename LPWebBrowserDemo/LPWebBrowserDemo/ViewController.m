@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "LPWebBrowser.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *txfUrl;
 
 @end
 
@@ -16,7 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationItem.title = @"Browser";
+    self.txfUrl.placeholder = @"input url";
+    self.txfUrl.text = @"www.baidu.com";
+    
+    
+    
+}
+- (IBAction)openUrl:(id)sender {
+    
+    NSString *url = self.txfUrl.text;
+    //调用方法，传入一个 URL text
+    LPWebBrowser *browser = [[LPWebBrowser alloc] initWithUrl:url];
+    [self.navigationController pushViewController:browser animated:YES];
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.txfUrl resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {

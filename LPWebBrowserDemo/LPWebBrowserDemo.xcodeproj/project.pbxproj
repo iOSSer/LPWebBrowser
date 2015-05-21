@@ -14,6 +14,11 @@
 		E80C687B1B0D8A720089CBA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80C687A1B0D8A720089CBA7 /* Images.xcassets */; };
 		E80C687E1B0D8A720089CBA7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E80C687C1B0D8A720089CBA7 /* LaunchScreen.xib */; };
 		E80C688A1B0D8A720089CBA7 /* LPWebBrowserDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E80C68891B0D8A720089CBA7 /* LPWebBrowserDemoTests.m */; };
+		E80C68961B0D8B470089CBA7 /* LPWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E80C68951B0D8B470089CBA7 /* LPWebBrowser.m */; };
+		E80C68981B0DAC310089CBA7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80C68971B0DAC310089CBA7 /* Social.framework */; };
+		E8FE094B1B0DB2C5006AA0CF /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FE094A1B0DB2C5006AA0CF /* ShareViewController.m */; };
+		E8FE094D1B0DB2C5006AA0CF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FE094C1B0DB2C5006AA0CF /* MainInterface.storyboard */; };
+		E8FE09501B0DB2C5006AA0CF /* Share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8FE09451B0DB2C5006AA0CF /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +29,28 @@
 			remoteGlobalIDString = E80C68691B0D8A720089CBA7;
 			remoteInfo = LPWebBrowserDemo;
 		};
+		E8FE094E1B0DB2C5006AA0CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E80C68621B0D8A720089CBA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8FE09441B0DB2C5006AA0CF;
+			remoteInfo = Share;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8FE09541B0DB2C5006AA0CF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8FE09501B0DB2C5006AA0CF /* Share.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E80C686A1B0D8A720089CBA7 /* LPWebBrowserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPWebBrowserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +66,14 @@
 		E80C68831B0D8A720089CBA7 /* LPWebBrowserDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPWebBrowserDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80C68881B0D8A720089CBA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E80C68891B0D8A720089CBA7 /* LPWebBrowserDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPWebBrowserDemoTests.m; sourceTree = "<group>"; };
+		E80C68941B0D8B470089CBA7 /* LPWebBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPWebBrowser.h; sourceTree = "<group>"; };
+		E80C68951B0D8B470089CBA7 /* LPWebBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPWebBrowser.m; sourceTree = "<group>"; };
+		E80C68971B0DAC310089CBA7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		E8FE09451B0DB2C5006AA0CF /* Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8FE09481B0DB2C5006AA0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8FE09491B0DB2C5006AA0CF /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		E8FE094A1B0DB2C5006AA0CF /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		E8FE094C1B0DB2C5006AA0CF /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +81,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80C68981B0DAC310089CBA7 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E80C68801B0D8A720089CBA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FE09421B0DB2C5006AA0CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,8 +105,11 @@
 		E80C68611B0D8A720089CBA7 = {
 			isa = PBXGroup;
 			children = (
+				E80C68971B0DAC310089CBA7 /* Social.framework */,
+				E80C68931B0D8B060089CBA7 /* LPWebBrowser */,
 				E80C686C1B0D8A720089CBA7 /* LPWebBrowserDemo */,
 				E80C68861B0D8A720089CBA7 /* LPWebBrowserDemoTests */,
+				E8FE09461B0DB2C5006AA0CF /* Share */,
 				E80C686B1B0D8A720089CBA7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +119,7 @@
 			children = (
 				E80C686A1B0D8A720089CBA7 /* LPWebBrowserDemo.app */,
 				E80C68831B0D8A720089CBA7 /* LPWebBrowserDemoTests.xctest */,
+				E8FE09451B0DB2C5006AA0CF /* Share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +165,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E80C68931B0D8B060089CBA7 /* LPWebBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				E80C68941B0D8B470089CBA7 /* LPWebBrowser.h */,
+				E80C68951B0D8B470089CBA7 /* LPWebBrowser.m */,
+			);
+			name = LPWebBrowser;
+			sourceTree = "<group>";
+		};
+		E8FE09461B0DB2C5006AA0CF /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				E8FE09491B0DB2C5006AA0CF /* ShareViewController.h */,
+				E8FE094A1B0DB2C5006AA0CF /* ShareViewController.m */,
+				E8FE094C1B0DB2C5006AA0CF /* MainInterface.storyboard */,
+				E8FE09471B0DB2C5006AA0CF /* Supporting Files */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		E8FE09471B0DB2C5006AA0CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8FE09481B0DB2C5006AA0CF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +203,12 @@
 				E80C68661B0D8A720089CBA7 /* Sources */,
 				E80C68671B0D8A720089CBA7 /* Frameworks */,
 				E80C68681B0D8A720089CBA7 /* Resources */,
+				E8FE09541B0DB2C5006AA0CF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E8FE094F1B0DB2C5006AA0CF /* PBXTargetDependency */,
 			);
 			name = LPWebBrowserDemo;
 			productName = LPWebBrowserDemo;
@@ -157,6 +233,23 @@
 			productReference = E80C68831B0D8A720089CBA7 /* LPWebBrowserDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E8FE09441B0DB2C5006AA0CF /* Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8FE09531B0DB2C5006AA0CF /* Build configuration list for PBXNativeTarget "Share" */;
+			buildPhases = (
+				E8FE09411B0DB2C5006AA0CF /* Sources */,
+				E8FE09421B0DB2C5006AA0CF /* Frameworks */,
+				E8FE09431B0DB2C5006AA0CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Share;
+			productName = Share;
+			productReference = E8FE09451B0DB2C5006AA0CF /* Share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +265,9 @@
 					E80C68821B0D8A720089CBA7 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = E80C68691B0D8A720089CBA7;
+					};
+					E8FE09441B0DB2C5006AA0CF = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -190,6 +286,7 @@
 			targets = (
 				E80C68691B0D8A720089CBA7 /* LPWebBrowserDemo */,
 				E80C68821B0D8A720089CBA7 /* LPWebBrowserDemoTests */,
+				E8FE09441B0DB2C5006AA0CF /* Share */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +309,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8FE09431B0DB2C5006AA0CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8FE094D1B0DB2C5006AA0CF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,6 +327,7 @@
 				E80C68761B0D8A720089CBA7 /* ViewController.m in Sources */,
 				E80C68731B0D8A720089CBA7 /* AppDelegate.m in Sources */,
 				E80C68701B0D8A720089CBA7 /* main.m in Sources */,
+				E80C68961B0D8B470089CBA7 /* LPWebBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +339,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8FE09411B0DB2C5006AA0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8FE094B1B0DB2C5006AA0CF /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +354,11 @@
 			isa = PBXTargetDependency;
 			target = E80C68691B0D8A720089CBA7 /* LPWebBrowserDemo */;
 			targetProxy = E80C68841B0D8A720089CBA7 /* PBXContainerItemProxy */;
+		};
+		E8FE094F1B0DB2C5006AA0CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8FE09441B0DB2C5006AA0CF /* Share */;
+			targetProxy = E8FE094E1B0DB2C5006AA0CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,6 +518,30 @@
 			};
 			name = Release;
 		};
+		E8FE09511B0DB2C5006AA0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E8FE09521B0DB2C5006AA0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,12 +561,22 @@
 				E80C688F1B0D8A720089CBA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E80C68901B0D8A720089CBA7 /* Build configuration list for PBXNativeTarget "LPWebBrowserDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E80C68911B0D8A720089CBA7 /* Debug */,
 				E80C68921B0D8A720089CBA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8FE09531B0DB2C5006AA0CF /* Build configuration list for PBXNativeTarget "Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8FE09511B0DB2C5006AA0CF /* Debug */,
+				E8FE09521B0DB2C5006AA0CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
