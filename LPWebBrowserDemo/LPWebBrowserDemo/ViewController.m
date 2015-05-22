@@ -21,10 +21,7 @@
     
     self.navigationItem.title = @"Browser";
     self.txfUrl.placeholder = @"input url";
-    self.txfUrl.text = @"www.baidu.com";
-    
-    
-    
+    self.txfUrl.text = @"www.taobao.com";
 }
 - (IBAction)openUrl:(id)sender {
     

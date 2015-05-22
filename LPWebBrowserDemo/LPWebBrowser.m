@@ -12,6 +12,8 @@
 @property (nonatomic, strong) UIBarButtonItem *barGoBack;
 @property (nonatomic, strong) UIBarButtonItem *barGoForward;
 
+@property (nonatomic, strong) UIActivityViewController *activityVC;
+
 @end
 
 @implementation LPWebBrowser
@@ -24,6 +26,11 @@
         _url = url;
     }
     return self;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    self.navigationController.toolbarHidden = YES;
 }
 
 - (void)viewDidLoad {
@@ -90,7 +97,9 @@
 
 - (void) goAction
 {
-    
+    NSURL *url = self.webview.request.URL.absoluteURL;
+    self.activityVC = [[UIActivityViewController alloc] initWithActivityItems:@[url] applicationActivities:nil];
+    [self presentViewController:self.activityVC animated:YES completion:nil];
 }
 
 
