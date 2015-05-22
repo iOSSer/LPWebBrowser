@@ -15,6 +15,7 @@
 		E80C687E1B0D8A720089CBA7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E80C687C1B0D8A720089CBA7 /* LaunchScreen.xib */; };
 		E80C688A1B0D8A720089CBA7 /* LPWebBrowserDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E80C68891B0D8A720089CBA7 /* LPWebBrowserDemoTests.m */; };
 		E80C68961B0D8B470089CBA7 /* LPWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = E80C68951B0D8B470089CBA7 /* LPWebBrowser.m */; };
+		E8E70E9A1B0F01D4009FF9DB /* screenshot.gif in Resources */ = {isa = PBXBuildFile; fileRef = E8E70E991B0F01D4009FF9DB /* screenshot.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		E80C68891B0D8A720089CBA7 /* LPWebBrowserDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPWebBrowserDemoTests.m; sourceTree = "<group>"; };
 		E80C68941B0D8B470089CBA7 /* LPWebBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPWebBrowser.h; sourceTree = "<group>"; };
 		E80C68951B0D8B470089CBA7 /* LPWebBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPWebBrowser.m; sourceTree = "<group>"; };
+		E8E70E991B0F01D4009FF9DB /* screenshot.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screenshot.gif; sourceTree = "<group>"; };
 		E8FE09451B0DB2C5006AA0CF /* Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 		E80C686D1B0D8A720089CBA7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E8E70E991B0F01D4009FF9DB /* screenshot.gif */,
 				E80C686E1B0D8A720089CBA7 /* Info.plist */,
 				E80C686F1B0D8A720089CBA7 /* main.m */,
 			);
@@ -242,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E70E9A1B0F01D4009FF9DB /* screenshot.gif in Resources */,
 				E80C68791B0D8A720089CBA7 /* Main.storyboard in Resources */,
 				E80C687E1B0D8A720089CBA7 /* LaunchScreen.xib in Resources */,
 				E80C687B1B0D8A720089CBA7 /* Images.xcassets in Resources */,
